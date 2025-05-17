@@ -6,6 +6,10 @@ import gsap from "gsap";
 import "remixicon/fonts/remixicon.css";
 import FeaturedProjects from "./FeaturedProjects";
 import AboutMe from "./AboutMe";
+import Skills from "./Skills";
+import Experience from "./Experience";
+import Education from "./Education";
+import Contact from "./Contact";
 
 function App() {
   const [showContent, setShowContent] = useState(false);
@@ -198,35 +202,13 @@ function App() {
 
 <AboutMe />
 
-            <section id="skills" className="py-24">
-              <h2 className="text-5xl mb-6">Skills</h2>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-lg">
-                <span>JavaScript</span><span>TypeScript</span><span>React</span><span>Next.js</span><span>Node.js</span><span>Express</span><span>Redux</span><span>GraphQL</span><span>MongoDB</span><span>MySQL</span><span>Drizzle ORM</span><span>Auth0</span><span>Jest</span><span>CI/CD</span><span>Figma</span>
-              </div>
-            </section>
+<Skills />
 
-            <section id="experience" className="py-24">
-              <h2 className="text-5xl mb-6">Experience</h2>
-              <div className="space-y-8">
-                <div><h3 className="text-3xl">RND4IMPACT INC.</h3><p className="text-lg">React/Node Engineer | Sep 2024 – Mar 2025</p><p className="text-md">Integrated Plaid API, built financial dashboards, automated sync jobs with cron.</p></div>
-                <div><h3 className="text-3xl">Jio Platforms Limited</h3><p className="text-lg">Software Engineer | Jun 2021 – Dec 2022</p><p className="text-md">Built REST APIs in Express, CI/CD on Azure, and frontend in React.</p></div>
-              </div>
-            </section>
+<Experience />
 
-            <section id="education" className="py-24">
-              <h2 className="text-5xl mb-6">Education</h2>
-              <ul className="list-disc list-inside text-xl">
-                <li>Master’s in CS – University at Buffalo (2023–2024)</li>
-                <li>Bachelor’s in CS – VIT (2017–2021)</li>
-              </ul>
-            </section>
+<Education />
 
-            <section id="contact" className="py-24">
-              <h2 className="text-5xl mb-6">Contact</h2>
-              <p className="text-xl">📧 tarvindraju@gmail.com</p>
-              <p className="text-xl">🔗 <a href="https://linkedin.com/in/tadiarvindraju" className="underline">LinkedIn</a></p>
-              <p className="text-xl">📄 <a href="./ArvindRajuTadi_resume.pdf" download className="underline">Download Resume</a></p>
-            </section>
+<Contact />
           </div>
         </div>
       )}
