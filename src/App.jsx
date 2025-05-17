@@ -4,6 +4,8 @@ import React, { useState, useRef, useEffect } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import "remixicon/fonts/remixicon.css";
+import FeaturedProjects from "./FeaturedProjects";
+import AboutMe from "./AboutMe";
 
 function App() {
   const [showContent, setShowContent] = useState(false);
@@ -192,20 +194,9 @@ function App() {
 
           {/* Sections */}
           <div className="bg-black text-white px-20">
-            <section id="projects" className="py-32">
-              <h2 className="text-6xl mb-10">Featured Projects</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-                <div><h3 className="text-4xl">PrepAI</h3><p className="mt-4 text-xl">AI-powered interview platform using Gemini, Redux, NLP</p></div>
-                <div><h3 className="text-4xl">DevDocer</h3><p className="mt-4 text-xl">Document reader using Pinecone & Stripe-based flows</p></div>
-                <div><h3 className="text-4xl">Chainfund</h3><p className="mt-4 text-xl">Ethereum DApp using smart contracts and token voting</p></div>
-                <div><h3 className="text-4xl">RND4Impact</h3><p className="mt-4 text-xl">Fintech dashboard with Plaid sync + node-cron jobs</p></div>
-              </div>
-            </section>
+<FeaturedProjects />
 
-            <section id="about" className="py-24">
-              <h2 className="text-5xl mb-6">About Me</h2>
-              <p className="text-xl max-w-4xl leading-relaxed">Software Engineer with 2+ years of experience building AI-driven and FinTech platforms. Proficient in JavaScript, TypeScript, and full-stack frameworks like React.js and Node.js. Passionate about crafting performant, secure, and stylish web apps — always running, never hunting.</p>
-            </section>
+<AboutMe />
 
             <section id="skills" className="py-24">
               <h2 className="text-5xl mb-6">Skills</h2>
