@@ -10,6 +10,7 @@ import Skills from "./Skills";
 import Experience from "./Experience";
 import Education from "./Education";
 import Contact from "./Contact";
+import MissionPassed from "./MissionPassed";
 
 function App() {
   const [showContent, setShowContent] = useState(false);
@@ -165,12 +166,12 @@ function App() {
 
               <img ref={characterRef} className="absolute character -bottom-[150%] left-1/2 -translate-x-1/2 scale-[3] rotate-[-20deg] z-10" src="./girlbg.png" alt="character" />
             </div>
-            {/* <div className="btmbar text-white absolute bottom-0 left-0 w-full py-10 px-10 bg-gradient-to-t from-black to-transparent">
+            <div className="btmbar text-white absolute bottom-0 left-0 w-full py-10 px-10 bg-gradient-to-t from-black to-transparent">
               <div className="flex gap-4 items-center">
                 <i className="text-4xl ri-arrow-down-line"></i>
                 <h3 className="text-xl font-[Helvetica_Now_Display]">Scroll to explore</h3>
               </div>
-            </div> */}
+            </div>
             <div className="btmbar text-white absolute bottom-0 left-0 w-full py-10 px-10 bg-gradient-to-t from-black to-transparent flex items-center justify-between">
   <div className="flex gap-4 items-center">
     <i className="text-4xl ri-arrow-down-line"></i>
@@ -209,9 +210,11 @@ function App() {
 <Education />
 
 <Contact />
+{/* <MissionPassed /> */}
           </div>
         </div>
       )}
+      <MissionPassed />
     </>
   );
 }
